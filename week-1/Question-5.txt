@@ -1,0 +1,2 @@
+A branch is an independent line of development.It helps to isolate your work from other 
+team members.It also helps Git to merge the different versions.
