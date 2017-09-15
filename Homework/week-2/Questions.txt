@@ -1,0 +1,28 @@
+Questions:
+
+Explain the difference between the == operator and the === operator.
+Answer: The == operator only compares the values of two variables. It doesn't compare the types	
+	of the variables. So if we use the == operator and the statement x==5 returns true, 
+	the statement x=="5" will also return true. But the statement x==="5" will return false,
+	because the variables have different types.
+
+Explain what a closure is.
+Answer: A closure is a function that closes over some local variables. If a function closes over
+	a variable from another function, it holds on to the value of that other function long after
+	everything else is let go.
+
+Explain what higher order functions are.
+Answer: Higher-order functions are functions that operate on other functions. This can be done by
+	taking other functions as arguments or by returning them.
+
+Explain what a query selector is and give an example line of JavaScript that uses a query selector.
+Answer:	The querySelector() method returns the first element that matches (a) specified 
+	CSS selector(s) in the document. The method only returns the first element that matches
+	the specified selectors. This is an effective way to find DOM elements. 
+	Example:
+	
+	function count(selector) {
+		return 	document.querySelectorAll(selector).length;
+	}
+
+	The method above counts all the elements in the DOM with the specified selector.

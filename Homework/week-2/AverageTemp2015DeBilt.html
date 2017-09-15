@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+	    <title>Average temperature per day the Bilt 2015</title>   
+	    <textarea id="rawdata" style="height: 100%; width: 120px; position: absolute; left: 0px; top: 0px">
+			20150101, 30
+			20150102, 73
+			20150103, 38
+			20150104, 39
+			20150105, 24
+			20150106, 28
+			20150107, 45
+			20150108, 65
+			20150109, 99
+			20150110, 95
+			20150111, 64
+			20150112, 84
+			20150113, 86
+			20150114, 44
+			20150115, 79
+			20150116, 55
+			20150117, 30
+			20150118, 22
+			20150119, 10
+			20150120, 8
+			20150121, -5
+			20150122, -12
+			20150123, -28
+			20150124, 22
+			20150125, 37
+			20150126, 59
+			20150127, 51
+			20150128, 53
+			20150129, 24
+			20150130, 17
+			20150131, 10
+			20150201, 26
+			20150202, 20
+			20150203, 17
+			20150204, 2
+			20150205, -7
+			20150206, -2
+			20150207, 15
+			20150208, 50
+			20150209, 57
+			20150210, 57
+			20150211, 42
+			20150212, 26
+			20150213, 46
+			20150214, 66
+			20150215, 26
+			20150216, 9
+			20150217, 33
+			20150218, 18
+			20150219, 35
+			20150220, 53
+			20150221, 32
+			20150222, 32
+			20150223, 59
+			20150224, 54
+			20150225, 48
+			20150226, 63
+			20150227, 49
+			20150228, 51
+			20150301, 83
+			20150302, 53
+			20150303, 44
+			20150304, 51
+			20150305, 57
+			20150306, 66
+			20150307, 84
+			20150308, 93
+			20150309, 88
+			20150310, 76
+			20150311, 27
+			20150312, 54
+			20150313, 46
+			20150314, 34
+			20150315, 56
+			20150316, 63
+			20150317, 76
+			20150318, 56
+			20150319, 68
+			20150320, 49
+			20150321, 64
+			20150322, 43
+			20150323, 31
+			20150324, 57
+			20150325, 59
+			20150326, 50
+			20150327, 57
+			20150328, 69
+			20150329, 93
+			20150330, 72
+			20150331, 90
+			20150401, 65
+			20150402, 63
+			20150403, 70
+			20150404, 54
+			20150405, 53
+			20150406, 69
+			20150407, 71
+			20150408, 86
+			20150409, 104
+			20150410, 113
+			20150411, 90
+			20150412, 100
+			20150413, 84
+			20150414, 119
+			20150415, 138
+			20150416, 99
+			20150417, 85
+			20150418, 90
+			20150419, 78
+			20150420, 109
+			20150421, 100
+			20150422, 85
+			20150423, 94
+			20150424, 124
+			20150425, 121
+			20150426, 106
+			20150427, 80
+			20150428, 60
+			20150429, 89
+			20150430, 98
+			20150501, 87
+			20150502, 97
+			20150503, 130
+			20150504, 154
+			20150505, 154
+			20150506, 122
+			20150507, 118
+			20150508, 142
+			20150509, 133
+			20150510, 128
+			20150511, 176
+			20150512, 146
+			20150513, 127
+			20150514, 112
+			20150515, 94
+			20150516, 105
+			20150517, 119
+			20150518, 111
+			20150519, 100
+			20150520, 105
+			20150521, 119
+			20150522, 149
+			20150523, 124
+			20150524, 126
+			20150525, 124
+			20150526, 118
+			20150527, 135
+			20150528, 129
+			20150529, 111
+			20150530, 112
+			20150531, 126
+			20150601, 127
+			20150602, 148
+			20150603, 138
+			20150604, 156
+			20150605, 214
+			20150606, 156
+			20150607, 139
+			20150608, 125
+			20150609, 116
+			20150610, 154
+			20150611, 179
+			20150612, 216
+			20150613, 175
+			20150614, 153
+			20150615, 133
+			20150616, 114
+			20150617, 160
+			20150618, 143
+			20150619, 127
+			20150620, 130
+			20150621, 144
+			20150622, 127
+			20150623, 126
+			20150624, 158
+			20150625, 182
+			20150626, 205
+			20150627, 176
+			20150628, 173
+			20150629, 180
+			20150630, 206
+			20150701, 260
+			20150702, 254
+			20150703, 241
+			20150704, 256
+			20150705, 202
+			20150706, 187
+			20150707, 198
+			20150708, 159
+			20150709, 135
+			20150710, 165
+			20150711, 204
+			20150712, 177
+			20150713, 174
+			20150714, 179
+			20150715, 179
+			20150716, 196
+			20150717, 217
+			20150718, 182
+			20150719, 162
+			20150720, 178
+			20150721, 210
+			20150722, 195
+			20150723, 178
+			20150724, 184
+			20150725, 149
+			20150726, 148
+			20150727, 166
+			20150728, 152
+			20150729, 141
+			20150730, 138
+			20150731, 133
+			20150801, 151
+			20150802, 177
+			20150803, 215
+			20150804, 180
+			20150805, 189
+			20150806, 205
+			20150807, 206
+			20150808, 187
+			20150809, 186
+			20150810, 198
+			20150811, 200
+			20150812, 195
+			20150813, 217
+			20150814, 209
+			20150815, 184
+			20150816, 150
+			20150817, 143
+			20150818, 146
+			20150819, 165
+			20150820, 179
+			20150821, 197
+			20150822, 207
+			20150823, 197
+			20150824, 179
+			20150825, 167
+			20150826, 202
+			20150827, 157
+			20150828, 154
+			20150829, 170
+			20150830, 200
+			20150831, 209
+			20150901, 161
+			20150902, 132
+			20150903, 122
+			20150904, 135
+			20150905, 132
+			20150906, 131
+			20150907, 142
+			20150908, 139
+			20150909, 131
+			20150910, 143
+			20150911, 143
+			20150912, 157
+			20150913, 166
+			20150914, 145
+			20150915, 125
+			20150916, 154
+			20150917, 144
+			20150918, 139
+			20150919, 134
+			20150920, 135
+			20150921, 146
+			20150922, 131
+			20150923, 132
+			20150924, 126
+			20150925, 116
+			20150926, 104
+			20150927, 110
+			20150928, 105
+			20150929, 117
+			20150930, 123
+			20151001, 106
+			20151002, 103
+			20151003, 103
+			20151004, 103
+			20151005, 131
+			20151006, 153
+			20151007, 149
+			20151008, 124
+			20151009, 102
+			20151010, 109
+			20151011, 65
+			20151012, 48
+			20151013, 38
+			20151014, 51
+			20151015, 63
+			20151016, 77
+			20151017, 81
+			20151018, 84
+			20151019, 105
+			20151020, 95
+			20151021, 97
+			20151022, 119
+			20151023, 114
+			20151024, 118
+			20151025, 99
+			20151026, 105
+			20151027, 111
+			20151028, 106
+			20151029, 107
+			20151030, 102
+			20151031, 98
+			20151101, 77
+			20151102, 69
+			20151103, 90
+			20151104, 122
+			20151105, 133
+			20151106, 155
+			20151107, 164
+			20151108, 131
+			20151109, 136
+			20151110, 145
+			20151111, 127
+			20151112, 133
+			20151113, 114
+			20151114, 97
+			20151115, 143
+			20151116, 125
+			20151117, 135
+			20151118, 131
+			20151119, 112
+			20151120, 79
+			20151121, 43
+			20151122, 26
+			20151123, 32
+			20151124, 42
+			20151125, 54
+			20151126, 40
+			20151127, 45
+			20151128, 67
+			20151129, 102
+			20151130, 95
+			20151201, 97
+			20151202, 110
+			20151203, 98
+			20151204, 94
+			20151205, 79
+			20151206, 105
+			20151207, 105
+			20151208, 98
+			20151209, 76
+			20151210, 59
+			20151211, 70
+			20151212, 76
+			20151213, 68
+			20151214, 76
+			20151215, 74
+			20151216, 114
+			20151217, 136
+			20151218, 118
+			20151219, 122
+			20151220, 116
+			20151221, 104
+			20151222, 130
+			20151223, 106
+			20151224, 98
+			20151225, 96
+			20151226, 131
+			20151227, 118
+			20151228, 89
+			20151229, 75
+			20151230, 69
+			20151231, 78
+			20160101, 41
+		</textarea>
+	</head>
+	<body>
+		<canvas id="myCanvas" style="position: absolute; width: 600px; height: 350px; left: 27%; top: 24%;"></canvas>
+		<script>
+			// load data by selecting textarea and split content into lines 
+			var data = document.getElementById("rawdata").value.split('\n');
+			var length = data.length;
+
+			// make vector for days 1-365
+			var days = [];
+			for (var n = 0; n < 366; n++) {
+				days.push(n);
+			}
+
+			// split the data further into two arrays; date and temp
+			var dates = [];
+			var temps = [];
+			for(var n = 0; n < length - 1; n++){
+				// split string into array of substrings, form variables for dates and put data in vectors
+				var splits = data[n].split(", ");
+				var datum = new Date(splits[0].slice(2, 6), splits[0].slice(6, 8) - 1, splits[0].slice(8, 10))
+				dates.push(datum);
+				temps.push(splits[1]);
+			}
+			
+			// write data into the browser console
+			console.log(dates);
+			console.log(temps);
+			console.log(days);
+			console.log(length);
+
+			// get <canvas> element with id "myCanvas"
+			var canvas = document.getElementById('myCanvas')
+			
+			// this function calculates alpha and beta and returns transformation function
+			function createTransform(domain, range) {
+			// domain is a two-element array of the data bounds [domain_min, domain_max]
+			// range is a two-element array of the screen bounds [range_min, range_max]
+			// this gives you two equations to solve:
+			// range_min = alpha * domain_min + beta
+			// range_max = alpha * domain_max + beta
+		 		// a solution would be:
+
+			    var domain_min = domain[0]
+			    var domain_max = domain[1]
+			    var range_min = range[0]
+			    var range_max = range[1]
+
+			    // formulas to calculate the alpha and the beta
+			   	var alpha = (range_max - range_min) / (domain_max - domain_min);
+			    var beta = range_max - alpha * domain_max;
+
+			    // returns the function for the linear transformation (y= a * x + b)
+			    return function(x){
+			      return alpha * x + beta;
+		   		};
+			}
+
+			// make variables voor min. temp. and max. temp.
+			var tempmin = Math.min.apply(null, temps);
+			var tempmax = Math.max.apply(null,temps);
+
+			// write the min. temp. and max. temp. into the browser console
+			console.log(tempmin);
+			console.log(tempmax);
+			
+			// make variables for max. values x, y and padding
+			max_y = 0.85*canvas.height;
+			max_x = 0.85*canvas.width;
+
+			// create padding 
+			console.log(max_x)
+			console.log(canvas.width)
+			padding_x = canvas.width - max_x;
+			padding_y_top = 0.50*(canvas.height - max_y);
+			padding_y_bottom = 0.50*(canvas.height-max_y);
+			console.log(max_y - padding_y_top);
+			
+			// use transform functions to transform data
+			var x_trans = createTransform([1, 365], [padding_x, canvas.width]);
+			var y_trans = createTransform([tempmin, tempmax], [padding_y_top, max_y]);
+
+		
+			// get object of CanvasRenderingContext2D interface
+			var ctx = canvas.getContext('2d');
+			ctx.linewidth = 1;
+
+			// draw graph
+			ctx.beginPath();
+			ctx.moveTo(padding_x, max_y + padding_y_bottom);
+			ctx.lineTo(canvas.width, max_y + padding_y_bottom);
+			ctx.moveTo(padding_x, max_y + padding_y_bottom);
+			ctx.lineTo(padding_x, 0);
+			ctx.stroke();
+
+			// add values to y-axis
+			ctx.textAlign = "right"
+			ctx.font = "8px Arial";
+			ctx.textBaseline = "middle";
+
+			temperatures = [350, 300, 250, 200, 150, 100, 50, 0, -50];
+
+			for (var n = 0; n < temperatures; n++) {
+				ctx.fillText(temperatures[n], padding_x - 10, max_y + padding_y_top - y_trans(temperatures[n]));
+				ctx.fillText('-', padding_x, max_y + padding_y_top - y_trans(temperatures[n]));
+			}
+
+			// add months to x-axis
+			ctx.textAlign = "center";
+			ctx.textBaseline = "top"
+			ctx.font = "9px Arial"
+			months = ["jan", "feb", "mar", "apr", "may", "june", "july", "aug", "sept", "oct", "nov", "dec"];
+
+			x_levels = padding_x;
+			for (var n = 0; n < 12; n++) {
+				if (n % 2 == 0) { 
+					ctx.fillText('|', x_levels, max_y + padding_y_top - 5);
+					ctx.fillText(months[n], x_levels, max_y + padding_y_top + 3);
+					x_levels = x_levels + (max_x/365)*31;
+				}
+				else {
+					ctx.fillText('|', x_levels, max_y + padding_y_top - 5);
+					ctx.fillText(months[n], x_levels, max_y + padding_y_top + 3);
+					x_levels = x_levels + (max_x/365)*30;
+				}
+			}
+
+			// add graph line
+			ctx.beginPath();
+			ctx.moveTo(x_trans(days[0], y_trans(temps[0]));
+			for (var n = 0; n < length - 1; n++) {
+				ctx.lineTo(x_trans(days[n]), y_trans(temps[n]));
+			}
+			ctx.stroke();
+
+			//add title to y-axis
+			ctx.font = "9px Arial";
+			ctx.textAlign = "left";
+			ctx.fillText("Maximum temperature in De Bilt, 2015", max_x/2, 0);
+			ctx.font = "8px Arial";
+			ctx.textAlign = "start";
+			ctx.rotate = (-Math.PI/2);
+			ctx.fillText("Temperature in 0.1 ⁰C", -0.75*canvas.height, 0);
+		</script>
+	</body>
+</html>
