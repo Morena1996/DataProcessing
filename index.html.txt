@@ -8,6 +8,7 @@
 <body>
 	<p>Name: Morena Bastiaansen</p>
 	<p>Student number: 10725792</p>	
+	<a href="/dataprocessing/week-2/homework/averagetemp2015debilt.html>Assignment 2: Temperature de Bilt 2015</a>
 </body>
 
 </html>
