@@ -404,6 +404,8 @@
 
 			// get <canvas> element with id "myCanvas"
 			var canvas = document.getElementById('myCanvas')
+			// get object of CanvasRenderingContext2D interface
+			var ctx = canvas.getContext('2d');
 
 			// this function calculates alpha and beta and returns transformation function
 			function createTransform(domain, range) {
@@ -454,8 +456,6 @@
 			var y_trans = createTransform([tempmin, tempmax], [padding_y_top, max_y]);
 
 		
-			// get object of CanvasRenderingContext2D interface
-			var ctx = canvas.getContext('2d');
 			ctx.linewidth = 1;
 
 			// draw graph
