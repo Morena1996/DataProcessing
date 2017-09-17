@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-	    <title>Average temperature per day the Bilt 2015</title>   
+	    <title>Average temperature per day de Bilt 2015</title>   
 	    <textarea id="rawdata" style="height: 100%; width: 120px; position: absolute; left: 0px; top: 0px">
 			20150101, 30
 			20150102, 73
@@ -379,9 +379,9 @@
 			var data = document.getElementById("rawdata").value.split('\n');
 			var length = data.length;
 
-			// make vector for days 1-365
+			// make vector for days (1-365)
 			var days = [];
-			for (var n = 0; n < 366; n++) {
+			for (var n = 1; n < 366; n++) {
 				days.push(n);
 			}
 
@@ -404,7 +404,7 @@
 
 			// get <canvas> element with id "myCanvas"
 			var canvas = document.getElementById('myCanvas')
-			
+
 			// this function calculates alpha and beta and returns transformation function
 			function createTransform(domain, range) {
 			// domain is a two-element array of the data bounds [domain_min, domain_max]
