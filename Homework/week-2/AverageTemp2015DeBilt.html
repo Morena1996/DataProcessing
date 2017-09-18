@@ -465,55 +465,6 @@
 			ctx.moveTo(padding_x, max_y + padding_y_bottom);
 			ctx.lineTo(padding_x, 0);
 			ctx.stroke();
-
-			// add values to y-axis
-			ctx.textAlign = "right"
-			ctx.font = "8px Arial";
-			ctx.textBaseline = "middle";
-
-			temperatures = [350, 300, 250, 200, 150, 100, 50, 0, -50];
-
-			for (var n = 0; n < temperatures; n++) {
-				ctx.fillText(temperatures[n], padding_x - 10, max_y + padding_y_top - y_trans(temperatures[n]));
-				ctx.fillText('-', padding_x, max_y + padding_y_top - y_trans(temperatures[n]));
-			}
-
-			// add months to x-axis
-			ctx.textAlign = "center";
-			ctx.textBaseline = "top"
-			ctx.font = "9px Arial"
-			months = ["jan", "feb", "mar", "apr", "may", "june", "july", "aug", "sept", "oct", "nov", "dec"];
-
-			x_levels = padding_x;
-			for (var n = 0; n < 12; n++) {
-				if (n % 2 == 0) { 
-					ctx.fillText('|', x_levels, max_y + padding_y_top - 5);
-					ctx.fillText(months[n], x_levels, max_y + padding_y_top + 3);
-					x_levels = x_levels + (max_x/365)*31;
-				}
-				else {
-					ctx.fillText('|', x_levels, max_y + padding_y_top - 5);
-					ctx.fillText(months[n], x_levels, max_y + padding_y_top + 3);
-					x_levels = x_levels + (max_x/365)*30;
-				}
-			}
-
-			// add graph line
-			ctx.beginPath();
-			ctx.moveTo(x_trans(days[0], y_trans(temps[0]));
-			for (var n = 0; n < length - 1; n++) {
-				ctx.lineTo(x_trans(days[n]), y_trans(temps[n]));
-			}
-			ctx.stroke();
-
-			//add title to y-axis
-			ctx.font = "9px Arial";
-			ctx.textAlign = "left";
-			ctx.fillText("Maximum temperature in De Bilt, 2015", max_x/2, 0);
-			ctx.font = "8px Arial";
-			ctx.textAlign = "start";
-			ctx.rotate = (-Math.PI/2);
-			ctx.fillText("Temperature in 0.1 ⁰C", -0.75*canvas.height, 0);
 		</script>
 	</body>
 </html>
