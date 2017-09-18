@@ -8,7 +8,7 @@
 <body>
 	<p>Name: Morena Bastiaansen</p>
 	<p>Student number: 10725792</p>	
-	<a href"/DataProcessing/Homework/week-2/AverageTemp2015DeBilt.html">Assignment 2</a>
+	<a href="/DataProcessing/Homework/week-2/AverageTemp2015DeBilt.html">Assignment 2</a>
 </body>
 
 </html>
