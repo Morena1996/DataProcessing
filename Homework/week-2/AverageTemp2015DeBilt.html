@@ -439,32 +439,73 @@
 			console.log(tempmin);
 			console.log(tempmax);
 			
-			// make variables for max. values x, y and padding
+			// make variables for max. values x, y and form padding
 			max_y = 0.85*canvas.height;
 			max_x = 0.85*canvas.width;
-
-			// create padding 
 			console.log(max_x)
 			console.log(canvas.width)
 			padding_x = canvas.width - max_x;
 			padding_y_top = 0.50*(canvas.height - max_y);
 			padding_y_bottom = 0.50*(canvas.height-max_y);
-			console.log(max_y - padding_y_top);
 			
 			// use transform functions to transform data
 			var x_trans = createTransform([1, 365], [padding_x, canvas.width]);
 			var y_trans = createTransform([tempmin, tempmax], [padding_y_top, max_y]);
 
-		
-			ctx.linewidth = 1;
-
 			// draw graph
+			ctx.linewidth = 1;
 			ctx.beginPath();
 			ctx.moveTo(padding_x, max_y + padding_y_bottom);
 			ctx.lineTo(canvas.width, max_y + padding_y_bottom);
 			ctx.moveTo(padding_x, max_y + padding_y_bottom);
 			ctx.lineTo(padding_x, 0);
 			ctx.stroke();
+
+			// add values to y-axis
+			ctx.textAlign = "right"
+			ctx.font = "8px Arial";
+			ctx.textBaseline = "middle";
+			temperatures = [300, 250, 200, 150, 100, 50, 0];
+			lentemp = temperatures.length;
+			for (var n = 0; n < lentemp; n++){
+				ctx.fillText(temperatures[n], padding_x - 5, max_y + padding_y_top - y_trans(temperatures[n]));
+				ctx.fillText('-', padding_x, max_y + padding_y_top - y_trans(temperatures[n]));
+			}
+
+			// add months to x-axis
+			ctx.textAlign = "center";
+			ctx.textBaseline = "top"
+			ctx.font = "7px Arial"
+			
+			months = ["jan", "feb", "mar", "apr", "may", "june", "july", "aug", "sept", "oct", "nov", "dec"];
+
+			x_levels = padding_x;
+
+			for (var n = 0; n < 12; n++) {
+				if (n % 2 == 0) { 
+					ctx.fillText('|', x_levels, max_y + padding_y_top - 5);
+					ctx.fillText(months[n], x_levels, max_y + padding_y_top + 3);
+					x_levels = x_levels + 22
+				}
+				else {
+					ctx.fillText('|', x_levels, max_y + padding_y_top - 5);
+					ctx.fillText(months[n], x_levels, max_y + padding_y_top + 3);
+					x_levels = x_levels + 22
+				}
+			}
+
+			// add graph line
+			ctx.beginPath();
+			ctx.moveTo(x_trans(days[0]), y_trans(temps[0]));
+			for(var n = 1; n < length - 1; n++){
+				ctx.lineTo(x_trans(days[n]), y_trans(temps[n]));
+			}
+			ctx.stroke();
+
+			// add title
+			ctx.font = "9px Arial";
+			ctx.textAlign = "left";
+			ctx.fillText("Maximum temperature per day in De Bilt, 2015", 100, 0);
 		</script>
 	</body>
 </html>
