@@ -1,0 +1,30 @@
+1. How can D3 access and change the DOM? What do select and selectAll do?
+   Answer: This happens via d3.select. Select accesses the first element that matches the clause.
+	   SelectAll() accesses all elements that match the clause.
+   
+2. What are the d and i in function(d){} and function(d, i){}?
+   Answer: The i is an iterative element. It represents the order of the selection. The d is just
+	   a convention. It is needed to ensure that something can be done with each element
+	   that has been selected by SelectAll().
+
+3. Write sample lines of JavaScript to add a div element with class “barChart1” and to add an 
+   svg element with class “barChart2” with square dimensions.
+   Answer: d3.select(".barChart1").append(div)
+	   d3.select(".barChart2").append("svg").attr("width", 50).attr("height", 50)
+
+4. Describe append, update, enter, and exit at a high level. What does “selectAll + data 
+   + enter + append” refer to?
+   Answer: Append adds its argument, an html-element, to the selected element (for example: "head").
+	   Update, enter and exit can be used to change a dataset dynamically.
+	   .update() can be used to change an element.
+	   .enter() can be used to create a new DOM element for an added data item, without affecting other elements.
+	   .exit() can be used to delete DOM elements without affecting other elements.
+
+5. What are the main differences between drawing a bar chart with HTML and SVG?
+   Answer: With SVG you can change the bar chart dynamically, where HTML forces you to hardcode
+	   your bar chart.
+
+6. In drawing the simple bar chart with D3 and SVG, what elements were appended, 
+   and what parts of the graph did these elements correspond to?
+   Answer: A div element. This element corresponded to the six rectangles that represented the data
+	   in the bar chart. 
