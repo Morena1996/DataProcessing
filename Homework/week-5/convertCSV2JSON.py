@@ -7,7 +7,7 @@
 import csv
 import json
 
-words = ["date", "temperature"]
+words = ["date", "max_temp", "min_temp", "average_temp"]
 
 def convert(filename):
 	filename_csv = filename
@@ -27,7 +27,7 @@ def convert(filename):
 	json.dump(data, file_json, sort_keys=True, indent=4, separators=(',', ': '))
 
 	
-convert("data.csv")
+convert("KNMI_2015_DeBilt.csv")
 
 
 

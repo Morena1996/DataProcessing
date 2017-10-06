@@ -51,10 +51,11 @@
 		.append("g")
 			.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-		d3.tsv("data.tsv", function(error, data) {
+		d3.csv("data1.csv", function(error, data) {
 			if (error) throw error;
 
 			data.forEach(function(d) { 
+				console.log(d)
 				d.Life_expectancy = +d.Life_expectancy;
 				d.Unemployment = +d.Unemployment;
 			});
