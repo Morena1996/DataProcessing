@@ -1,35 +1,26 @@
 <!DOCTYPE html>
+<meta charset="utf-8">
 <html>
-    <head>
-        <meta charset="utf-8">
-        <style>
+	<head>
+		<style>
+			.bar {
+			  fill: #B8B8B8;
+			}
 
-        .bar {
-            fill: steelblue;
-        }
+			.bar:hover {
+			  fill: #FF5733;
+			}
 
-        .axis text {
-        font: 10px sans-serif;
-        }
+			.axis--x path {
+			  display: none;
+			}
 
-        .axis path,
-        .axis line {
-        fill: none;
-        stroke: #000;
-        shape-rendering: crispEdges;
-        }
-
-        .x.axis path{
-            display: none;
-        }
-        
-        </style>
-        <title>D3 Bar Chart </title>
-    </head>
-    
-    <body>
-        <svg class="chart"></svg>
-        <script src="//d3js.org/d3.v3.min.js" charset="utf-8"></script>
-        <script src="barchart.js"></script>
-    </body>
+		</style>
+		<title>Data Processing: week 3</title>
+		<script src="https://d3js.org/d3.v4.js" charset="utf-8"></script>
+	</head>
+	<body>
+		<svg class="chart"></svg>
+		<script src="barchart.js"></script>
+	</body>
 </html>

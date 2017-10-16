@@ -1,0 +1,130 @@
+[
+    {
+        "date": "date",
+        "temperature": "temperature"
+    },
+    {
+        "date": "20031001",
+        "temperature": "12.3"
+    },
+    {
+        "date": "20031002",
+        "temperature": "14.2"
+    },
+    {
+        "date": "20031003",
+        "temperature": "14.6"
+    },
+    {
+        "date": "20031004",
+        "temperature": "10.1"
+    },
+    {
+        "date": "20031005",
+        "temperature": "8.1"
+    },
+    {
+        "date": "20031006",
+        "temperature": "9.2"
+    },
+    {
+        "date": "20031007",
+        "temperature": "8.8"
+    },
+    {
+        "date": "20031008",
+        "temperature": "11.2"
+    },
+    {
+        "date": "20031009",
+        "temperature": "12.3"
+    },
+    {
+        "date": "20031010",
+        "temperature": "13.1"
+    },
+    {
+        "date": "20031011",
+        "temperature": "10.3"
+    },
+    {
+        "date": "20031012",
+        "temperature": "8.4"
+    },
+    {
+        "date": "20031013",
+        "temperature": "9.1"
+    },
+    {
+        "date": "20031014",
+        "temperature": "8.3"
+    },
+    {
+        "date": "20031015",
+        "temperature": "7.3"
+    },
+    {
+        "date": "20031016",
+        "temperature": "7.2"
+    },
+    {
+        "date": "20031017",
+        "temperature": "6.5"
+    },
+    {
+        "date": "20031018",
+        "temperature": "5.3"
+    },
+    {
+        "date": "20031019",
+        "temperature": "5.6"
+    },
+    {
+        "date": "20031020",
+        "temperature": "6.4"
+    },
+    {
+        "date": "20031021",
+        "temperature": "5.8"
+    },
+    {
+        "date": "20031022",
+        "temperature": "5.4"
+    },
+    {
+        "date": "20031023",
+        "temperature": "1.8"
+    },
+    {
+        "date": "20031024",
+        "temperature": "0.2"
+    },
+    {
+        "date": "20031025",
+        "temperature": "4.9"
+    },
+    {
+        "date": "20031026",
+        "temperature": "5.1"
+    },
+    {
+        "date": "20031027",
+        "temperature": "0.5"
+    },
+    {
+        "date": "20031028",
+        "temperature": "0.1"
+    },
+    {
+        "date": "20031029",
+        "temperature": "4"
+    },
+    {
+        "date": "20031030",
+        "temperature": "7.3"
+    },
+    {
+        "date": "20031031",
+        "temperature": "8.4"
+    }
+]
