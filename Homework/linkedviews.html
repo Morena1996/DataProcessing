@@ -1,0 +1,258 @@
+<!--
+Dataprocessing
+Name: Morena Bastiaansen
+Studentnumber: 10725792
+Week 6: Assignment linked views\
+
+This file ontains the HTML-code for the linked views visualization in D3
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+        body {
+                font: 15px sans-serif;
+                text-align: center;
+        }
+
+        #scatterplot {
+                font: 8px sans-serif;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+
+                margin: auto;
+        }
+        .axis path,
+        .axis line {
+            fill:none;
+            stroke: #000;
+            shape-rendering: crispEdges;
+        }
+
+        .dot {
+            stroke: #000;
+        }
+
+        </style>
+        <title>Life expectancy, unemployment and the prevention of HIV transmissions</title>
+    </head>
+    <body>
+        <p id="title">Life expectancy, unemployment and the prevention of HIV transmissions in 2016</p>
+        <p id="subscript">Source: Data Worldbank. Author: Morena Bastiaansen</p>
+        <!--create div-element for the scatterplot-->
+        <div id="scatterplot">
+            <script src="//d3js.org/d3.v3.min.js"></script>
+            <script>
+
+            var margin = {top: 0, right: 20, bottom: 30, left: 40},
+                width = 700 - margin.left - margin.right,
+                height = 400 - margin.top - margin.bottom;
+
+            var x = d3.scale.linear()
+                .range([0, width]);
+
+            var y = d3.scale.linear()
+                .range([height, 0]);
+
+            var color = d3.scale.category10();
+
+            var xAxis = d3.svg.axis()
+                .scale(x)
+                .orient("bottom");
+
+            var yAxis = d3.svg.axis()
+                .scale(y)
+                .orient("left");
+
+            var svg = d3.select("body").append("svg")
+                .attr("width", width + margin.left + margin.right)
+                .attr("height", height + margin.top + margin.bottom)
+            .append("g")
+                .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+            d3.json("data1.json", function(error, data) {
+                if (error) throw error;
+
+                data.forEach(function(d) { 
+                    console.log(d)
+                    d.life_expectancy = +Number(d.life_expectancy);
+                    d.unemployment = +Number(d.unemployment);
+                });
+
+                x.domain(d3.extent(data, function(d) { return d.unemployment; })).nice();
+                y.domain(d3.extent(data, function(d) { return d.life_expectancy; })).nice();
+
+              svg.append("g")
+                  .attr("class", "x axis")
+                  .attr("transform", "translate(0," + height + ")")
+                  .call(xAxis)
+                .append("text")
+                  .attr("class", "label")
+                  .attr("x", width)
+                  .attr("y", -6)
+                  .style("text-anchor", "end")
+                  .text("Unemployment, total (% of total labor force) (modeled ILO estimate) ");
+
+              svg.append("g")
+                  .attr("class", "y axis")
+                  .call(yAxis)
+                .append("text")
+                  .attr("class", "label")
+                  .attr("transform", "rotate(-90)")
+                  .attr("y", 6)
+                  .attr("dy", ".71em")
+                  .style("text-anchor", "end")
+                  .text("Life expectancy at birth, total (years)")
+
+              svg.selectAll(".dot")
+                  .data(data)
+                .enter().append("circle")
+                  .attr("class", "dot")
+                  .attr("r", 3.5)
+                  .attr("cx", function(d) { return x(d.unemployment); })
+                  .attr("cy", function(d) { return y(d.life_expectancy); })
+                  .style("fill", function(d) { return color(d.continent); });
+
+              var legend = svg.selectAll(".legend")
+                  .data(color.domain())
+                .enter().append("g")
+                  .attr("class", "legend")
+                  .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
+
+              legend.append("rect")
+                  .attr("x", width - 18)
+                  .attr("width", 18)
+                  .attr("height", 18)
+                  .style("fill", color);
+
+              legend.append("text")
+                  .attr("x", width - 24)
+                  .attr("y", 9)
+                  .attr("dy", ".35em")
+                  .style("text-anchor", "end")
+                  .text(function(d) { return d; });
+            });
+            </script>
+        </div>
+        <p id="piechart">Antiretroviral therapy coverage for PMTCT (% of pregnant women living with HIV)</p>
+        <div id="container2" style="width: 1000px; height: 300px;">
+          <script>
+          function makePieChart(piedata){
+            // Remove old piechart before making a new one
+            removePieChart();
+
+            // Statements ensure that a piechart is only created when there is data for it
+            if (d3.select('input[name="dataset"]:checked').property("value") == "percentage2013" && piedata[0].percentage2013 == "Unknown")
+              {
+                d3.selectAll(".input")
+                  .on("click", change)
+              }
+              else if (d3.select('input[name="dataset"]:checked').property("value") == "percentage1960" && piedata[0].percentage1960 == "Unknown")
+              {
+                d3.selectAll(".input")
+                  .on("click", change)
+              }
+              else 
+              {
+              // Set properties of svg-element for piechart
+              var width = 960,
+                  height = 250,
+                  radius = Math.min(width, height) / 2;
+
+              // colorscaling of piechart
+              var color = d3.scale.ordinal()
+                .range(["#2ca25f", "#99d8c9", "#e5f5f9"]);
+
+              // Create piechart for selected input year
+              var selvalue = d3.select('input[name="dataset"]:checked').property("value");
+              var pie = d3.layout.pie()
+                .value(function(d) { 
+                  // Make piechart for selected ear
+                  if (selvalue == "percentage2013")
+                  {
+                    return d.percentage2013;
+                  }
+                  else
+                  {
+                    return d.percentage1960;
+                  }
+                })
+                .sort(null);
+
+              // Set properties of piechart
+              var arc = d3.svg.arc()
+                .innerRadius(radius - 70)
+                .outerRadius(radius - 30);
+
+              // Make svg element of specified width/height for piechart
+              var svg2 = d3.select("#container2").append("svg")
+                .attr("width", width)
+                .attr("height", height)
+                .append("g")
+                .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
+
+                // Create piechart for selected year
+                var path = svg.datum(piedata).selectAll("path")
+                    .data(pie)
+                    .enter().append("path")
+                    .attr("fill", function(d, i) { return color(i); })
+                    .attr("d", arc)
+                    .each(function(d) { this._current = d; }); // store the initial angles
+
+                // MAKE LEGEND PIECHART
+                // Set size of colored legendblocks
+                var legendRectSize = (radius * 0.10);
+                var legendSpacing = radius * 0.02;
+
+                // Position g-elements for colored boxes
+                var legend = svg.selectAll('.legend')
+                      .data(color.domain())
+                      .enter()
+                      .append('g')
+                      .attr('class', 'legend')
+                      .attr('transform', function(d, i) {
+                          var height = legendRectSize + legendSpacing;
+                          var offset =  height * color.domain().length / 2;
+                          var horz = -2 * legendRectSize;
+                          var vert = i * height - offset;
+                          return 'translate(' + horz + ',' + vert + ')';
+                      });
+
+                  // Add coloredboxes to legend
+                  legend.append('rect')
+                      .attr('width', legendRectSize)
+                      .attr('height', legendRectSize)
+                      .style('fill', color)
+                      .style('stroke', color);
+
+                  // Add text to legend
+                  var legendtext = ["solid", "liquid", "gaseous"];
+                  legend.append('text')
+                      .attr('x', legendRectSize + legendSpacing)
+                      .attr('y', legendRectSize - legendSpacing)
+                      .text(function(d) { return legendtext[d]; });
+
+                  // select input and run change function when suposed to
+                d3.selectAll(".input")
+                .on("click", change);
+              }
+
+              // function that creates new piechart when another year is clicked
+              function change() {
+                makePieChart(piedata);
+              }
+              
+              function type(d) {
+              d.percentage2013 = +d.percentage2013;
+              d.percentage1960 = +d.percentage1960;
+              return d;
+            };
+          };
+              
+          </script>
+        </div>
+    </body>
+</html>
