@@ -1,0 +1,583 @@
+[
+    {
+        "continent": "95",
+        "country": "Afghanistan",
+        "life_expectancy": "63.30",
+        "pmtct": "5",
+        "unemployment": "8.52"
+    },
+    {
+        "continent": "56",
+        "country": "Angola",
+        "life_expectancy": "61.19",
+        "pmtct": "44",
+        "unemployment": "6.67"
+    },
+    {
+        "continent": "9",
+        "country": "Argentina",
+        "life_expectancy": "76.29",
+        "pmtct": "91",
+        "unemployment": "6.62"
+    },
+    {
+        "continent": "5",
+        "country": "Australia",
+        "life_expectancy": "82.45",
+        "pmtct": "95",
+        "unemployment": "6.06"
+    },
+    {
+        "continent": "25",
+        "country": "Azerbaijan",
+        "life_expectancy": "71.85",
+        "pmtct": "75",
+        "unemployment": "4.96"
+    },
+    {
+        "continent": "16",
+        "country": "Burundi",
+        "life_expectancy": "57.07",
+        "pmtct": "84",
+        "unemployment": "1.62"
+    },
+    {
+        "continent": "5",
+        "country": "Benin",
+        "life_expectancy": "60.58",
+        "pmtct": "95",
+        "unemployment": "1.02"
+    },
+    {
+        "continent": "83",
+        "country": "Bangladesh",
+        "life_expectancy": "72.22",
+        "pmtct": "17",
+        "unemployment": "4.12"
+    },
+    {
+        "continent": "8",
+        "country": "Belarus",
+        "life_expectancy": "73.62",
+        "pmtct": "92",
+        "unemployment": "0.51"
+    },
+    {
+        "continent": "65",
+        "country": "Belize",
+        "life_expectancy": "70.31",
+        "pmtct": "35",
+        "unemployment": "9.97"
+    },
+    {
+        "continent": "32",
+        "country": "Bolivia",
+        "life_expectancy": "68.75",
+        "pmtct": "68",
+        "unemployment": "3.50"
+    },
+    {
+        "continent": "11",
+        "country": "Brazil",
+        "life_expectancy": "75.20",
+        "pmtct": "89",
+        "unemployment": "8.52"
+    },
+    {
+        "continent": "5",
+        "country": "Botswana",
+        "life_expectancy": "65.75",
+        "pmtct": "95",
+        "unemployment": "17.86"
+    },
+    {
+        "continent": "62",
+        "country": "Chile",
+        "life_expectancy": "79.16",
+        "pmtct": "38",
+        "unemployment": "6.21"
+    },
+    {
+        "continent": "26",
+        "country": "Cameroon",
+        "life_expectancy": "57.56",
+        "pmtct": "74",
+        "unemployment": "4.37"
+    },
+    {
+        "continent": "5",
+        "country": "Colombia",
+        "life_expectancy": "74.16",
+        "pmtct": "95",
+        "unemployment": "8.95"
+    },
+    {
+        "continent": "37",
+        "country": "Cuba",
+        "life_expectancy": "79.54",
+        "pmtct": "63",
+        "unemployment": "2.91"
+    },
+    {
+        "continent": "65",
+        "country": "Djibouti",
+        "life_expectancy": "62.25",
+        "pmtct": "35",
+        "unemployment": "6.60"
+    },
+    {
+        "continent": "51",
+        "country": "Algeria",
+        "life_expectancy": "75.86",
+        "pmtct": "49",
+        "unemployment": "11.00"
+    },
+    {
+        "continent": "5",
+        "country": "Ecuador",
+        "life_expectancy": "76.08",
+        "pmtct": "95",
+        "unemployment": "4.77"
+    },
+    {
+        "continent": "63",
+        "country": "Eritrea",
+        "life_expectancy": "64.62",
+        "pmtct": "37",
+        "unemployment": "7.18"
+    },
+    {
+        "continent": "5",
+        "country": "Spain",
+        "life_expectancy": "83.38",
+        "pmtct": "95",
+        "unemployment": "22.06"
+    },
+    {
+        "continent": "31",
+        "country": "Ethiopia",
+        "life_expectancy": "65.01",
+        "pmtct": "69",
+        "unemployment": "5.27"
+    },
+    {
+        "continent": "5",
+        "country": "France",
+        "life_expectancy": "82.67",
+        "pmtct": "95",
+        "unemployment": "10.36"
+    },
+    {
+        "continent": "24",
+        "country": "Gabon",
+        "life_expectancy": "65.68",
+        "pmtct": "76",
+        "unemployment": "19.11"
+    },
+    {
+        "continent": "54",
+        "country": "Georgia",
+        "life_expectancy": "72.97",
+        "pmtct": "46",
+        "unemployment": "11.96"
+    },
+    {
+        "continent": "44",
+        "country": "Ghana",
+        "life_expectancy": "62.41",
+        "pmtct": "56",
+        "unemployment": "5.54"
+    },
+    {
+        "continent": "57",
+        "country": "Guinea",
+        "life_expectancy": "59.40",
+        "pmtct": "43",
+        "unemployment": "6.90"
+    },
+    {
+        "continent": "15",
+        "country": "Guinea-Bissau",
+        "life_expectancy": "56.95",
+        "pmtct": "85",
+        "unemployment": "6.55"
+    },
+    {
+        "continent": "81",
+        "country": "Guatemala",
+        "life_expectancy": "73.04",
+        "pmtct": "19",
+        "unemployment": "2.42"
+    },
+    {
+        "continent": "34",
+        "country": "Guyana",
+        "life_expectancy": "66.54",
+        "pmtct": "66",
+        "unemployment": "11.60"
+    },
+    {
+        "continent": "46",
+        "country": "Honduras",
+        "life_expectancy": "73.32",
+        "pmtct": "54",
+        "unemployment": "7.38"
+    },
+    {
+        "continent": "29",
+        "country": "Haiti",
+        "life_expectancy": "63.01",
+        "pmtct": "71",
+        "unemployment": "13.49"
+    },
+    {
+        "continent": "86",
+        "country": "Indonesia",
+        "life_expectancy": "69.04",
+        "pmtct": "14",
+        "unemployment": "5.99"
+    },
+    {
+        "continent": "5",
+        "country": "Ireland",
+        "life_expectancy": "81.50",
+        "pmtct": "95",
+        "unemployment": "9.40"
+    },
+    {
+        "continent": "42",
+        "country": "Italy",
+        "life_expectancy": "83.49",
+        "pmtct": "58",
+        "unemployment": "11.90"
+    },
+    {
+        "continent": "5",
+        "country": "Jamaica",
+        "life_expectancy": "75.81",
+        "pmtct": "95",
+        "unemployment": "13.31"
+    },
+    {
+        "continent": "13",
+        "country": "Kazakhstan",
+        "life_expectancy": "72.00",
+        "pmtct": "87",
+        "unemployment": "4.97"
+    },
+    {
+        "continent": "20",
+        "country": "Kenya",
+        "life_expectancy": "66.65",
+        "pmtct": "80",
+        "unemployment": "11.29"
+    },
+    {
+        "continent": "25",
+        "country": "Cambodia",
+        "life_expectancy": "68.47",
+        "pmtct": "75",
+        "unemployment": "0.18"
+    },
+    {
+        "continent": "30",
+        "country": "Liberia",
+        "life_expectancy": "61.98",
+        "pmtct": "70",
+        "unemployment": "3.87"
+    },
+    {
+        "continent": "34",
+        "country": "Lesotho",
+        "life_expectancy": "53.57",
+        "pmtct": "66",
+        "unemployment": "26.52"
+    },
+    {
+        "continent": "44",
+        "country": "Luxembourg",
+        "life_expectancy": "82.23",
+        "pmtct": "56",
+        "unemployment": "6.67"
+    },
+    {
+        "continent": "5",
+        "country": "Latvia",
+        "life_expectancy": "74.12",
+        "pmtct": "95",
+        "unemployment": "9.87"
+    },
+    {
+        "continent": "38",
+        "country": "Morocco",
+        "life_expectancy": "75.52",
+        "pmtct": "62",
+        "unemployment": "9.70"
+    },
+    {
+        "continent": "5",
+        "country": "Moldova",
+        "life_expectancy": "71.37",
+        "pmtct": "95",
+        "unemployment": "4.90"
+    },
+    {
+        "continent": "97",
+        "country": "Madagascar",
+        "life_expectancy": "65.51",
+        "pmtct": "3",
+        "unemployment": "1.80"
+    },
+    {
+        "continent": "42",
+        "country": "Mexico",
+        "life_expectancy": "76.88",
+        "pmtct": "58",
+        "unemployment": "4.34"
+    },
+    {
+        "continent": "65",
+        "country": "Mali",
+        "life_expectancy": "57.46",
+        "pmtct": "35",
+        "unemployment": "8.14"
+    },
+    {
+        "continent": "13",
+        "country": "Myanmar",
+        "life_expectancy": "66.39",
+        "pmtct": "87",
+        "unemployment": "0.80"
+    },
+    {
+        "continent": "20",
+        "country": "Mozambique",
+        "life_expectancy": "57.61",
+        "pmtct": "80",
+        "unemployment": "24.67"
+    },
+    {
+        "continent": "66",
+        "country": "Mauritania",
+        "life_expectancy": "63.05",
+        "pmtct": "34",
+        "unemployment": "11.12"
+    },
+    {
+        "continent": "16",
+        "country": "Malawi",
+        "life_expectancy": "62.54",
+        "pmtct": "84",
+        "unemployment": "6.64"
+    },
+    {
+        "continent": "27",
+        "country": "Malaysia",
+        "life_expectancy": "75.22",
+        "pmtct": "73",
+        "unemployment": "3.10"
+    },
+    {
+        "continent": "5",
+        "country": "Namibia",
+        "life_expectancy": "63.64",
+        "pmtct": "95",
+        "unemployment": "26.94"
+    },
+    {
+        "continent": "48",
+        "country": "Niger",
+        "life_expectancy": "59.68",
+        "pmtct": "52",
+        "unemployment": "2.59"
+    },
+    {
+        "continent": "68",
+        "country": "Nigeria",
+        "life_expectancy": "52.98",
+        "pmtct": "32",
+        "unemployment": "4.28"
+    },
+    {
+        "continent": "5",
+        "country": "Nicaragua",
+        "life_expectancy": "75.04",
+        "pmtct": "95",
+        "unemployment": "5.61"
+    },
+    {
+        "continent": "5",
+        "country": "Netherlands",
+        "life_expectancy": "81.71",
+        "pmtct": "95",
+        "unemployment": "6.87"
+    },
+    {
+        "continent": "36",
+        "country": "Nepal",
+        "life_expectancy": "69.87",
+        "pmtct": "64",
+        "unemployment": "3.03"
+    },
+    {
+        "continent": "96",
+        "country": "Pakistan",
+        "life_expectancy": "66.33",
+        "pmtct": "4",
+        "unemployment": "5.90"
+    },
+    {
+        "continent": "15",
+        "country": "Peru",
+        "life_expectancy": "74.71",
+        "pmtct": "85",
+        "unemployment": "4.42"
+    },
+    {
+        "continent": "88",
+        "country": "Philippines",
+        "life_expectancy": "69.01",
+        "pmtct": "12",
+        "unemployment": "6.29"
+    },
+    {
+        "continent": "29",
+        "country": "Paraguay",
+        "life_expectancy": "73.04",
+        "pmtct": "71",
+        "unemployment": "5.29"
+    },
+    {
+        "continent": "5",
+        "country": "Romania",
+        "life_expectancy": "74.96",
+        "pmtct": "95",
+        "unemployment": "6.81"
+    },
+    {
+        "continent": "18",
+        "country": "Rwanda",
+        "life_expectancy": "66.62",
+        "pmtct": "82",
+        "unemployment": "2.80"
+    },
+    {
+        "continent": "96",
+        "country": "Sudan",
+        "life_expectancy": "64.23",
+        "pmtct": "4",
+        "unemployment": "13.18"
+    },
+    {
+        "continent": "45",
+        "country": "Senegal",
+        "life_expectancy": "66.66",
+        "pmtct": "55",
+        "unemployment": "9.78"
+    },
+    {
+        "continent": "93",
+        "country": "Somalia",
+        "life_expectancy": "55.87",
+        "pmtct": "7",
+        "unemployment": "6.67"
+    },
+    {
+        "continent": "11",
+        "country": "Suriname",
+        "life_expectancy": "71.29",
+        "pmtct": "89",
+        "unemployment": "8.39"
+    },
+    {
+        "continent": "5",
+        "country": "Sweden",
+        "life_expectancy": "82.55",
+        "pmtct": "95",
+        "unemployment": "7.43"
+    },
+    {
+        "continent": "5",
+        "country": "Swaziland",
+        "life_expectancy": "56.91",
+        "pmtct": "95",
+        "unemployment": "25.75"
+    },
+    {
+        "continent": "37",
+        "country": "Chad",
+        "life_expectancy": "52.55",
+        "pmtct": "63",
+        "unemployment": "5.78"
+    },
+    {
+        "continent": "14",
+        "country": "Togo",
+        "life_expectancy": "59.92",
+        "pmtct": "86",
+        "unemployment": "6.81"
+    },
+    {
+        "continent": "5",
+        "country": "Thailand",
+        "life_expectancy": "75.07",
+        "pmtct": "95",
+        "unemployment": "0.67"
+    },
+    {
+        "continent": "15",
+        "country": "Tajikistan",
+        "life_expectancy": "71.01",
+        "pmtct": "85",
+        "unemployment": "10.78"
+    },
+    {
+        "continent": "16",
+        "country": "Tanzania",
+        "life_expectancy": "64.90",
+        "pmtct": "84",
+        "unemployment": "2.43"
+    },
+    {
+        "continent": "5",
+        "country": "Uganda",
+        "life_expectancy": "59.51",
+        "pmtct": "95",
+        "unemployment": "2.15"
+    },
+    {
+        "continent": "16",
+        "country": "Ukraine",
+        "life_expectancy": "71.19",
+        "pmtct": "84",
+        "unemployment": "9.14"
+    },
+    {
+        "continent": "17",
+        "country": "Uruguay",
+        "life_expectancy": "77.13",
+        "pmtct": "83",
+        "unemployment": "7.30"
+    },
+    {
+        "continent": "34",
+        "country": "Vietnam",
+        "life_expectancy": "75.89",
+        "pmtct": "66",
+        "unemployment": "2.12"
+    },
+    {
+        "continent": "17",
+        "country": "Zambia",
+        "life_expectancy": "61.34",
+        "pmtct": "83",
+        "unemployment": "7.63"
+    },
+    {
+        "continent": "7",
+        "country": "Zimbabwe",
+        "life_expectancy": "60.28",
+        "pmtct": "93",
+        "unemployment": "5.11"
+    }
+]
